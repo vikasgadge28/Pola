@@ -1,0 +1,1653 @@
+:root {
+	--bs-blue-1:#a3d6d0;
+	--bs-blue-2:#72b1b1;
+	--bs-blue-3:#e2eff7;
+	--bs-blue-4:#305473;
+	
+	--bs-gray-1:#c4c6c5;
+	--bs-gray-2:#a7a7a7;
+	--bs-gray-3:#ededed;
+	
+	--opacity-1:rgba(0,0,0,0.5);
+	--opacity-2:rgba(0,0,0,0.15);
+	--opacity-3:rgba(0,0,0,0.25);
+	--opacity-4:rgba(0,0,0,0.55);
+	--opacity-5:rgba(0,0,0,0.75);
+	
+	--opacity-6:rgba(255,255,255,0.5);
+	--opacity-7:rgba(255,255,255,0.15);
+	--opacity-8:rgba(255,255,255,0.25);
+	--opacity-9:rgba(255,255,255,0.55);
+	--opacity-10:rgba(255,255,255,0.75);
+}
+
+html {
+	background:transparent; 
+	zoom:100%;
+}
+
+body{
+	line-height:18px;
+	overflow-x: hidden;
+	background-color:var(--bs-blue-3);
+	height:100%;
+	width:100%;
+	font-family: "montserrat", sans-serif;
+	font-size: 100%; 
+	
+	-webkit-font-smoothing:antialiased;
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	
+	transition:opacity 0.3s, transform 0.3s;
+   	transition:background-color .1s;
+	-moz-transition:background-color .1s linear;
+	-webkit-transition:background-color .1s linear;
+}
+
+/*
+ * Fix browser defanavt design
+ */
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp, tt, var, center,
+dl, dt, dd, ol, nav, ul, li,
+fieldset, form, label, legend, input, button, textarea, select,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	list-style:none;
+}
+
+*:focus {
+  outline:0 !important;
+}
+
+a,
+button{
+  	color:inherit;
+  	text-decoration:none;
+  	cursor:pointer;
+  	outline:0;
+	transition:0.3s;
+	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
+	-ms-transition:0.3s;
+	background: transparent;
+}
+
+button:active,
+a:active{
+}
+
+a,
+a:focus {
+	color: var(--bs-purple-5);
+	text-decoration:none; 
+}
+
+a:hover{
+	color: var(--bs-purple-3);
+}
+
+.fs-7{
+	font-size: 0.8rem;
+}
+
+
+.blinker{
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+.snow-cap::before,
+.snow-cap-2::before,
+.snow-cap-3::after{
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.snow-cap::before{
+    top: 0;
+    margin-top: -2rem;
+    left: 0;
+    background-image: url(../images/snow-cap-1.svg);
+	background-repeat: repeat-x;
+}
+
+.snow-cap-2::before {
+    top: 0;
+    margin-top: -3.7rem;
+    left: 0;
+    background-image: url(../images/snow-cap-2.svg);
+	background-repeat: no-repeat;
+	rotate:347deg;
+}
+
+.snow-cap-3::after{
+    bottom: 0;
+    margin-bottom: -3.7rem;
+    right: 0;
+    margin-right: -20.8rem;
+    background-image: url(../images/snow-cap-3.svg);
+    background-repeat: no-repeat;
+    rotate: 3deg;
+}
+
+
+.pola-bear-1{
+	background-image: url(../images/pola-1.webp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20rem;
+    margin-bottom: 6rem;
+    width: 25rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pola-bear-2{
+	background-image: url(../images/pola-2.webp);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 4rem;
+    margin-bottom: 9rem;
+    width: 21rem;
+    height: 19rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pola-bear-3{
+	background-image: url(../images/pola-3.webp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5rem;
+    margin-bottom: 6rem;
+    width: 25rem;
+    height: 28rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.pola-bear-5{
+	background-image: url(../images/pola-5.webp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5rem;
+    margin-bottom: 6rem;
+    width: 25rem;
+    height: 28rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pepe{
+	background-image: url(../images/pepe-halp.webp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 47rem;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 16.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.baby-pola{
+	background-image: url("../images/baby-pola.webp");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: -5rem;
+    margin-bottom: -3rem;
+    width: 33rem;
+    height: 41rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+
+.bg-blue-1{
+	background-color: var(--bs-blue-1);
+}
+
+.bg-blue-2{
+	background-color: var(--bs-blue-2);
+}
+
+.bg-blue-3{
+	background-color: var(--bs-blue-3);
+}
+
+.bg-blue-4{
+	background-color: var(--bs-blue-4);
+}
+
+.nft-bg::after{
+	content: "";
+	background-image: url("../images/nfts-bg.webp");
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.75;
+}
+
+.frosted-glass-effect {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ==========================================================================
+   Font Sizes, Colors
+   ========================================================================== */
+
+.display-s{
+	font-size: 6rem;
+}
+
+.display-l{
+	font-size: 25rem;
+}
+
+.display-xl{
+	font-size: 50rem;
+}
+
+.text-blue-1{
+	color: var(--bs-blue-1);
+}
+
+.text-blue-2{
+	color: var(--bs-blue-2);
+}
+
+.text-blue-3{
+	color: var(--bs-blue-3);
+}
+
+.text-blue-4{
+	color: var(--bs-blue-4);
+}
+
+/* ==========================================================================
+   Border Colors
+   ========================================================================== */
+
+.border-blue-1{
+	border-color: var(--bs-blue-1);
+}
+
+.border-blue-2{
+	border-color: var(--bs-blue-2);
+}
+
+.border-blue-3{
+	border-color: var(--bs-blue-3);
+}
+
+.border-blue-4{
+	border-color: var(--bs-blue-4);
+}
+
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+
+.logo{
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+.menu{
+	margin-bottom: 2rem;
+    padding: 1rem;
+   	left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu > div > a{
+	font-family: 'milky';
+	font-size: 1.25rem;
+	padding: 0.5rem 1.25rem;
+	color: var(--bs-blue-4);
+}
+
+.menu > div > a.active{
+	background-color: var(--bs-gray-3);
+	color: var(--bs-blue-4);
+}
+
+.menu > div > a:hover{
+	color: var(--bs-blue-1);
+	background-color: var(--bs-blue-4)
+}
+
+.hamburger-menu {
+	display: block;
+    width: 3rem;
+    height: 1.5rem;
+    position: relative;
+}
+  
+.hamburger-menu div {
+	background-color: #333; /* Color of the lines */
+	height: 2px; /* Thickness of the lines, making it look thin */
+	width: 100%; /* Width of the lines */
+	position: absolute;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu div:nth-child(1) {
+	top: 0;
+}
+
+.hamburger-menu div:nth-child(2) {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hamburger-menu div:nth-child(3) {
+	bottom: 0;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.forest::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/forest.svg");
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+footer{
+	background: rgb(48,84,115);
+	background: -moz-linear-gradient(180deg, rgba(48,84,115,1) 22%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(48,84,115,1) 22%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(180deg, rgba(48,84,115,1) 22%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#305473",endColorstr="#ffffff",GradientType=1);
+	padding-bottom: 22rem;
+}
+
+footer .row,
+footer a{
+	color: var(--bs-white) !important;
+}
+
+footer .disclaimer{
+	background:rgba(0,0,0,0.21);
+}
+
+.polarmy-link{
+	font-weight: bold;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero{
+	height: 60rem;
+}
+.home-btn {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.home-btn button {
+    font-size: 1.3rem;
+    width: 9rem;
+    height: 3.5rem;
+}
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+.banner{
+	letter-spacing: -1rem;
+}
+
+.banner > span:nth-child(1){
+	rotate: -35deg;
+}
+
+.banner > span:nth-child(2){
+	rotate: 0deg;
+}
+
+.banner > span:nth-child(3){
+	rotate: -5deg;
+}
+
+.banner > span:nth-child(4){
+	rotate: 15deg;
+	margin-left: 4rem;
+}
+
+.banner > span{
+	text-shadow: -1px 0 white, 0 15px white, 1px 0 white, 0 -1px white;
+}
+
+.banner span {
+  display: inline-block;
+  animation: hoverEffect 2s ease-in-out infinite;
+}
+
+/* Example individual delays for each letter */
+.banner span:nth-child(1) { animation-delay: 0.5s; }
+.banner span:nth-child(2) { animation-delay: 0.4s; }
+.banner span:nth-child(3) { animation-delay: 0.6s; }
+.banner span:nth-child(4) { animation-delay: 0.8s; }
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+.img{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.glacier-1{
+	background-image: url("../images/glacier-1.svg");
+	width: 55rem;
+	height: 35rem;
+	margin-left: -5rem;
+	margin-bottom: -1.95rem;
+}
+
+.glacier-2{
+	background-image: url("../images/glacier-2.svg");
+	width: 50rem;
+	height: 10rem;
+	margin-right: -5rem;
+	margin-bottom: 5rem;
+}
+
+/* ==========================================================================
+   Tokenomics
+   ========================================================================== */
+
+.tokenomics > div > div,
+.tokenomics > div > div > div:nth-child(1){
+	border-width: 0.4rem;
+	border-style: solid;
+}
+
+
+.tokenomics > div > div{
+  	animation: hoverEffect 2s ease-in-out infinite;
+	display: inline-block;
+}
+
+.tokenomics > div > div:nth-child(1) { animation-delay: 0.5s; }
+.tokenomics > div > div:nth-child(2) { animation-delay: 0.4s; }
+.tokenomics > div > div:nth-child(3) { animation-delay: 0.6s; }
+.tokenomics > div > div:nth-child(4) { animation-delay: 0.8s; }
+
+
+.tokenomics > div > div{
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, var(--bs-blue-3) 0px -6px 0px inset;
+	transition: 0.3s all;
+}
+
+.tokenomics > div:hover > div{
+	transform: scale(1.1);
+	position: relative;
+	z-index: 1;
+}
+
+.tokenomics > div:nth-child(1) > div{
+	rotate:8deg;
+}
+
+.tokenomics > div:nth-child(1):hover > div{
+	rotate:-2deg;
+}
+
+.tokenomics > div:nth-child(2) > div{
+	rotate:-8deg;
+}
+
+.tokenomics > div:nth-child(2):hover > div{
+	rotate:-4deg;
+}
+
+.tokenomics > div:nth-child(3) > div{
+	rotate:10deg;
+}
+
+.tokenomics > div:nth-child(3):hover > div{
+	rotate:3deg;
+}
+
+.tokenomics > div:nth-child(4) > div{
+	rotate:-3deg;
+}
+
+.tokenomics > div:nth-child(4):hover > div{
+	rotate:6deg;
+}
+
+.tokenomics > div > div,
+.tokenomics > div > div > div{
+	border-color: var(--bs-blue-1);
+}
+
+.tokenomics > div > div::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 5rem;
+	background: url("../images/snow-cap-4.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: -2rem;
+    margin-right: -7.6rem;
+}
+
+.tokenomics > div:nth-child(1) > div > div:nth-child(1){ 
+	background: rgb(136,237,136);
+	background: -moz-radial-gradient(circle, rgba(136,237,136,1) 0%, rgba(0,198,0,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(136,237,136,1) 0%, rgba(0,198,0,1) 100%);
+	background: radial-gradient(circle, rgba(136,237,136,1) 0%, rgba(0,198,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#88ed88",endColorstr="#00c600",GradientType=1);
+}
+
+.tokenomics > div:nth-child(2) > div > div:nth-child(1){ 
+	background: rgb(45,182,186);
+	background: -moz-radial-gradient(circle, rgba(45,182,186,1) 0%, rgba(20,137,140,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(45,182,186,1) 0%, rgba(20,137,140,1) 100%);
+	background: radial-gradient(circle, rgba(45,182,186,1) 0%, rgba(20,137,140,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2db6ba",endColorstr="#14898c",GradientType=1);
+}
+
+.tokenomics > div:nth-child(3) > div > div:nth-child(1){ 
+	background: rgb(94,105,147);
+	background: -moz-radial-gradient(circle, rgba(94,105,147,1) 0%, rgba(31,41,82,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(94,105,147,1) 0%, rgba(31,41,82,1) 100%);
+	background: radial-gradient(circle, rgba(94,105,147,1) 0%, rgba(31,41,82,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5e6993",endColorstr="#1f2952",GradientType=1);
+}
+
+.tokenomics > div:nth-child(4) > div > div:nth-child(1){ 
+	background: rgb(255,255,255);
+	background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(230,209,209,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(230,209,209,1) 100%);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(230,209,209,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e6d1d1",GradientType=1);
+}
+
+/* ==========================================================================
+   Play Button
+   ========================================================================== */
+
+.play-btn{  
+	width: 8rem;
+	height: 8rem;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 9rem;
+    margin-left: 34rem;
+}
+
+.play-btn > a{
+	display: flex;
+}
+
+.easy-bradge{
+	height: 356px; 
+	width: 100%; 
+	border: none;
+}
+
+.btn-radio{
+	width: 18rem;
+}
+
+/* ==========================================================================
+   Socials
+   ========================================================================== */
+.link-section{
+	padding-top: 3rem;
+}   
+
+.pola-in-phone{
+	position: relative;
+	
+}
+.pola-in-phone a:nth-child(1) img {
+    display: block; /* Show the first image by default */
+}
+.pola-in-phone a:nth-child(2) img {
+    display: block; /* Show the first image by default */
+}
+
+.pola-in-phone a:nth-child(3) img {
+    display: none; /* Hide the second image by default */
+}
+
+.pola-in-phone a:nth-child(4) img {
+    display: none; /* Hide the second image by default */
+}
+
+.pola-in-phone a {
+    position: absolute;
+    top: 0;              
+    left: 0;        
+}
+ 
+.polarmy-buble{
+	animation: hoverEffect 2s ease-in-out infinite;
+	display: inline-block;
+	z-index: 2;
+	transition: 0.3s all;
+}
+
+.polarmy-buble:hover {
+    rotate:-3deg;
+}
+
+
+.socials > a > div{
+	width: 4rem;
+	height: 4rem;
+	background-position:center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.socials > a > div.twitter{
+	background-image: url('https://assets-global.website-files.com/65df0808e9cb3fe30a509571/65df0808e9cb3fe30a5095b9_x-twitter.svg');
+	width: 3rem; /* Smaller width */
+    height: 3rem; /* Smaller height */
+}
+
+.socials > a > div.telegram{
+	background-image: url('https://assets-global.website-files.com/65df0808e9cb3fe30a509571/65df0808e9cb3fe30a5095ba_telegram.svg');
+	width: 3rem; /* Smaller width */
+    height: 3rem; /* Smaller height */
+}
+
+.socials > a > div.dexscreener{
+	background-image: url('https://assets-global.website-files.com/65df0808e9cb3fe30a509571/65df0808e9cb3fe30a5095aa_dexscreener.svg');
+	width: 3rem; /* Smaller width */
+    height: 3rem; /* Smaller height */
+}
+
+.socials > a > div.dextools{
+	background-image: url('https://assets-global.website-files.com/65df0808e9cb3fe30a509571/65df0808e9cb3fe30a5095a9_dextools.svg');
+	width: 3rem; /* Smaller width */
+    height: 3rem; /* Smaller height */
+}
+
+.socials > a > div.coingecko{
+	background-image: url('https://assets-global.website-files.com/65df0808e9cb3fe30a509571/65df0808e9cb3fe30a5095b7_coingecko.svg');
+	width: 3rem; /* Smaller width */
+    height: 3rem; /* Smaller height */
+}
+
+.dxsale{
+	width: 230px;
+}
+
+
+/* ==========================================================================
+   How to buy
+   ========================================================================== */
+
+.how-to-buy{
+	margin-top: 4rem;
+	opacity: 0.2;
+	font-weight: 900;
+	font-size: 10rem;
+	margin-left: 12rem;
+	
+}
+
+.small-text {
+	font-size: 3em;
+	margin-top: 0.5rem; /* Adjust the size as needed */
+}
+
+
+.speech-bubble{
+	position: relative;
+	border-top-left-radius: 70rem;
+	border-top-right-radius: 70rem;
+	border-bottom-left-radius: 70rem;
+	border-bottom-right-radius: 70rem;
+	background: #629bdd;
+	font: 2em/4 Century Gothic, Verdana, sans-serif;
+	text-align: center;
+	border: 1rem solid var(--bs-blue-3);
+}
+
+.speech-bubbles{
+	margin-top: 10rem;
+}
+
+.speech-bubbles > div > div{
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.speech-bubbles > div:nth-child(1){
+	transform: rotate(-10deg) rotateY(15deg);
+}
+
+.speech-bubbles > div:nth-child(2){
+	transform: rotate(5deg) rotateY(15deg);
+}
+
+.speech-bubbles > div:nth-child(3){
+	transform: rotate(-3deg) rotateY(15deg);
+}
+
+.speech-bubbles > div:nth-child(4){
+	transform: rotate(-14deg) rotateY(15deg);
+}
+
+
+/* ==========================================================================
+   VPN section
+   ========================================================================== */
+   
+
+.vpn-button-container{
+	display: flex;
+	gap: 1rem;
+}
+
+.vpn-button{
+	
+	width: 350px;
+}
+
+.vpn-logo{
+	width: 100px; 
+	height: auto;
+}
+
+/* ==========================================================================
+   NFT Previews
+   ========================================================================== */
+
+.nft-previews > div{
+	width: 3rem;
+	height: 3rem;
+	transition: all 0.3s;
+}
+
+.nft-previews > div > img{
+	width: 100%;
+}
+
+.nft-previews > div:hover{
+	transform: scale(1.2);
+}
+
+/* ==========================================================================
+   Ice Creams
+   ========================================================================== */
+
+.ice-creams > div > a{
+	background: #FFFFFF;
+	transition: all 0.3s;
+}
+
+.ice-creams > div:hover > a{
+	transform: scale(1.1);
+}
+
+
+.ice-creams > div > a > div{
+	background: var(--bs-blue-3);
+	transition: all 0.3s;
+}
+
+.ice-creams > div:hover > a > div{
+	transition: all 0.3s;
+	background: rgb(255,255,255);
+	background: -moz-radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(226,239,247,1) 66%);
+	background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(226,239,247,1) 66%);
+	background: radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(226,239,247,1) 66%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e2eff7",GradientType=1);
+}
+
+.ice-creams > div:hover > a > div > img{
+	transform: scale(1.1);
+}
+
+
+
+/* ==========================================================================
+   Hover
+   ========================================================================== */
+
+.hovering-item {
+  animation: hoverEffect 2s ease-in-out infinite;
+  display: inline-block; /* Example to ensure transform applies */
+}
+
+@keyframes hoverEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ==========================================================================
+   Snowflake
+   ========================================================================== */
+
+.snow-wrapper{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	overflow: hidden;
+}
+
+.snowflake {
+  --size: 1vw;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -5vh;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+
+.snowflake:nth-child(1) {
+  --size: 0.4vw;
+  --left-ini: 8vw;
+  --left-end: -3vw;
+  left: 82vw;
+  animation: snowfall 6s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(2) {
+  --size: 0.2vw;
+  --left-ini: -4vw;
+  --left-end: -2vw;
+  left: 66vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(3) {
+  --size: 1vw;
+  --left-ini: 10vw;
+  --left-end: -9vw;
+  left: 34vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(4) {
+  --size: 0.6vw;
+  --left-ini: -7vw;
+  --left-end: 7vw;
+  left: 35vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(5) {
+  --size: 1vw;
+  --left-ini: 8vw;
+  --left-end: 0vw;
+  left: 85vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(6) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: -6vw;
+  left: 82vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(7) {
+  --size: 0.6vw;
+  --left-ini: 5vw;
+  --left-end: 2vw;
+  left: 96vw;
+  animation: snowfall 9s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(8) {
+  --size: 0.2vw;
+  --left-ini: 0vw;
+  --left-end: 9vw;
+  left: 74vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(9) {
+  --size: 1vw;
+  --left-ini: 8vw;
+  --left-end: -3vw;
+  left: 81vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(10) {
+  --size: 0.6vw;
+  --left-ini: -6vw;
+  --left-end: 9vw;
+  left: 17vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(11) {
+  --size: 0.4vw;
+  --left-ini: -8vw;
+  --left-end: 6vw;
+  left: 71vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(12) {
+  --size: 0.6vw;
+  --left-ini: 7vw;
+  --left-end: 2vw;
+  left: 2vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(13) {
+  --size: 1vw;
+  --left-ini: -7vw;
+  --left-end: 6vw;
+  left: 57vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(14) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: -8vw;
+  left: 46vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(15) {
+  --size: 0.2vw;
+  --left-ini: -4vw;
+  --left-end: 4vw;
+  left: 15vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(16) {
+  --size: 0.6vw;
+  --left-ini: -3vw;
+  --left-end: -8vw;
+  left: 48vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(17) {
+  --size: 1vw;
+  --left-ini: 6vw;
+  --left-end: 10vw;
+  left: 70vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(18) {
+  --size: 1vw;
+  --left-ini: -2vw;
+  --left-end: 1vw;
+  left: 40vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(19) {
+  --size: 0.4vw;
+  --left-ini: -5vw;
+  --left-end: 10vw;
+  left: 9vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -4s;
+}
+
+.snowflake:nth-child(20) {
+  --size: 0.8vw;
+  --left-ini: 1vw;
+  --left-end: -4vw;
+  left: 49vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(21) {
+  --size: 0.2vw;
+  --left-ini: -4vw;
+  --left-end: 9vw;
+  left: 59vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(22) {
+  --size: 0.2vw;
+  --left-ini: -7vw;
+  --left-end: 10vw;
+  left: 70vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -6s;
+}
+
+.snowflake:nth-child(23) {
+  --size: 1vw;
+  --left-ini: -8vw;
+  --left-end: 4vw;
+  left: 21vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(24) {
+  --size: 0.8vw;
+  --left-ini: -7vw;
+  --left-end: 5vw;
+  left: 3vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(25) {
+  --size: 0.6vw;
+  --left-ini: 1vw;
+  --left-end: -5vw;
+  left: 41vw;
+  animation: snowfall 12s linear infinite;
+  animation-delay: -1s;
+}
+
+.snowflake:nth-child(26) {
+  --size: 0.4vw;
+  --left-ini: -4vw;
+  --left-end: 6vw;
+  left: 53vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(27) {
+  --size: 0.8vw;
+  --left-ini: 6vw;
+  --left-end: 6vw;
+  left: 45vw;
+  animation: snowfall 11s linear infinite;
+  animation-delay: -2s;
+}
+
+.snowflake:nth-child(28) {
+  --size: 0.2vw;
+  --left-ini: -2vw;
+  --left-end: -3vw;
+  left: 96vw;
+  animation: snowfall 6s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(29) {
+  --size: 0.4vw;
+  --left-ini: 10vw;
+  --left-end: 4vw;
+  left: 33vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(30) {
+  --size: 0.4vw;
+  --left-ini: 2vw;
+  --left-end: -9vw;
+  left: 91vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(31) {
+  --size: 0.8vw;
+  --left-ini: 3vw;
+  --left-end: -4vw;
+  left: 91vw;
+  animation: snowfall 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.snowflake:nth-child(32) {
+  --size: 1vw;
+  --left-ini: 2vw;
+  --left-end: 8vw;
+  left: 75vw;
+  animation: snowfall 6s linear infinite;
+  animation-delay: -7s;
+}
+
+.snowflake:nth-child(33) {
+  --size: 0.8vw;
+  --left-ini: 1vw;
+  --left-end: 1vw;
+  left: 91vw;
+  animation: snowfall 8s linear infinite;
+  animation-delay: -8s;
+}
+
+.snowflake:nth-child(34) {
+  --size: 0.6vw;
+  --left-ini: 1vw;
+  --left-end: 1vw;
+  left: 85vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -10s;
+}
+
+.snowflake:nth-child(35) {
+  --size: 0.8vw;
+  --left-ini: 7vw;
+  --left-end: 3vw;
+  left: 88vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -5s;
+}
+
+.snowflake:nth-child(36) {
+  --size: 0.6vw;
+  --left-ini: 9vw;
+  --left-end: 4vw;
+  left: 88vw;
+  animation: snowfall 10s linear infinite;
+  animation-delay: -7s;
+}
+
+.snowflake:nth-child(37) {
+  --size: 0.6vw;
+  --left-ini: -4vw;
+  --left-end: 7vw;
+  left: 85vw;
+  animation: snowfall 13s linear infinite;
+  animation-delay: -9s;
+}
+
+.snowflake:nth-child(38) {
+  --size: 0.6vw;
+  --left-ini: -6vw;
+  --left-end: 6vw;
+  left: 73vw;
+  animation: snowfall 14s linear infinite;
+  animation-delay: -9s;
+}
+
+
+@media screen and (max-width: 1440px){
+	
+   	.glacier-1 {
+		margin-left: -15rem;
+	}
+	
+	.pola-bear-1 {
+		margin-left: 10rem;
+	}
+	
+	.home-btn button{
+        width: 9rem;
+        height: 3.5rem;
+    }
+	
+	.pepe {
+		margin-left: 35rem;
+	}
+	.btn-radio-container{
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-radio{
+		width: 29rem;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+   	.glacier-1 {
+		margin-left: -24rem;
+	}
+	
+	.glacier-2 {
+		margin-right: -13rem;
+	}
+	
+	.pola-bear-1 {
+		margin-left: 2rem;
+	}
+	
+	.pola-bear-2 {
+		margin-right: -2rem;
+	}
+	
+	.pepe {
+		margin-left: 27rem;
+		margin-bottom: -1rem;
+	}
+	
+	.home-btn{
+        gap: 1rem;
+    }
+	
+	.baby-pola {
+		margin-right: -12rem;
+	}
+	
+	.tokenomics > div > div::after {
+		margin-right: -17rem;
+	}
+	
+	.snow-cap-2::before {
+		margin-top: -5.3rem;
+		rotate: 350deg;
+	}
+	
+	.snow-cap-3::after {
+		margin-bottom: -4.3rem;
+		margin-right: -39.8rem;
+	}
+	
+	.display-s {
+		font-size: 4.5rem;
+	}
+	
+	.btn-radio-container{
+		display: flex;
+		gap: 1rem;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-radio{
+		width: 19rem;
+	}
+	
+	.play-btn {
+		margin-bottom: 6rem;
+		margin-left: 23rem;
+	}
+	
+	.how-to-buy {
+		font-size: 8rem;
+		margin-left: -3rem;
+	}
+	
+	footer{
+		padding-bottom: 15rem;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	
+	.speech-bubbles {
+		margin-top: 0rem;
+	}
+	
+	.how-to-buy {
+        margin-top: 0rem;
+        margin-left: -2rem;
+    }
+	
+	.how-to-buy {
+		margin-top: 0rem;
+		margin-left: -2rem;
+	}
+	
+	.speech-bubbles > div{
+		transform: rotate(0deg) rotateY(0deg);
+	}
+	
+	.hero {
+		height: 42rem;
+	}
+	
+	.display-l {
+		font-size: 15rem;
+	}
+	
+	.display-s {
+		font-size: 3rem;
+	}
+	
+	.pepe {
+		margin-left: 22rem;
+		margin-bottom: -1rem;
+		width: 14rem;
+		height: 12rem;
+	}
+	
+	.pola-bear-1 {
+		margin-left: 7rem;
+		margin-bottom: 5rem;
+		width: 13rem;
+		height: 10rem;
+	}
+	
+	.pola-bear-2 {
+		margin-right: 0rem;
+		margin-bottom: 7rem;
+		width: 11rem;
+		height: 10rem;
+	}
+	
+	.glacier-1 {
+		width: 40rem;
+		height: 25rem;
+		margin-left: -17rem;
+		margin-bottom: -1.95rem;
+	}
+	
+	.glacier-2 {
+		width: 30rem;
+		height: 6rem;
+		margin-right: -6rem;
+		margin-bottom: 4rem;
+	}
+	
+    .home-btn{
+        gap: 0.8rem;
+    }
+
+    .home-btn button{
+        font-size: 1.2rem;
+        width: 7rem;
+        height: 2.8rem;
+    }
+    
+	
+	.play-btn {
+    	width: 5rem;
+		height: 5rem;
+		bottom: 0;
+		left: 0;
+		margin-bottom: 5rem;
+		margin-left: 13rem;
+	}
+	
+	.baby-pola {
+		margin-right: -5rem;
+		margin-bottom: -4rem;
+		width: 11rem;
+		height: 14rem;
+	}
+	
+	.snow-cap-2::before {
+		margin-top: -4.3rem;
+		rotate:347deg;
+	}
+	
+	.snow-cap-3::after {
+		margin-right: -24.6rem;
+		margin-bottom: -3.8rem;
+	}
+	
+	.link-section{
+		padding-top: 1rem;
+	} 
+	
+	.pola-in-phone{
+		width: 15rem;
+		height: 15rem;
+		margin-bottom: 1rem;
+	}
+	
+	.pola-in-phone a:nth-child(1) img {
+		display: none;
+	}
+	.pola-in-phone a:nth-child(2) img {
+		display: none; 
+	}
+	
+	.pola-in-phone a:nth-child(3) img {
+		display: block; 
+	}
+	
+	.pola-in-phone a:nth-child(4) img {
+		display: block; 
+	}
+	
+	.tokenomics > div > div::after {
+		margin-right: -9.5rem;
+	}
+	
+	.vpn-button-container{
+		flex-direction: column;
+	}
+	.vpn-button{
+	
+		width: 300px;
+	}
+	
+	.btn-radio-container{
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-radio{
+		width: 25rem;
+	}
+	
+	.popsicle-img{
+		width: 30%;
+	}
+
+	
+	footer{
+		padding-bottom: 7rem;
+	}
+}
+
+@media screen and (max-width: 450px){
+	
+	.hero > .fs-3 {
+    	font-size: calc(0.9rem + .6vw) !important;
+		padding: 1rem 0 0;
+	}
+	
+	#about .fs-5 {
+    	font-size: calc(0.7rem + .6vw) !important;
+	}
+	
+	.how-to-buy {
+		font-size: 3rem;
+		margin-left: 2rem;
+		margin-top: -2rem;
+	}
+	
+	.home-btn button{
+		font-size: 1rem;
+		width: 6rem;
+		height: 2.5rem;
+	}
+	
+	.tokenomics > div > div{
+		rotate:0deg !important;
+	}
+	
+	.display-l {
+		font-size: 9rem;
+	}
+	
+	.glacier-1 {
+		margin-left: -12rem;
+	}
+	
+	.glacier-2{
+		display: none;
+	}
+	
+	.pepe {
+		margin-left: 13rem;
+	}
+	
+	.pola-bear-1{
+		margin-left: 13rem;
+	}
+	
+	.pola-bear-2 {
+		margin-right: 15rem;
+		margin-bottom: 5rem;
+	}
+	
+	.pepe {
+		margin-left: 18rem;
+		margin-bottom: 1rem;
+		width: 8rem;
+		height: 7rem;
+	}
+	
+	.hero {
+		height: 35rem;
+	}
+	
+	.snow-cap::before {
+		margin-top: -1.4rem;
+	}
+	
+	.tokenomics > div > div::after {
+		margin-right: -13.6rem;
+	}
+	
+	.snow-cap-2::before {
+		margin-top: -2rem;
+	}
+	
+	.snow-cap-3::after {
+		margin-bottom: -2.7rem;
+		margin-right: -7.3rem;
+		rotate: 1deg;
+	}
+	
+	.play-btn {
+		width: 7rem;
+		height: 7rem;
+		margin-left: 14rem;
+	}
+	.btn-radio{
+		width: 18rem;
+	}
+	
+	.link-section{
+		padding-top: 0.3rem;
+	} 
+	
+	
+	.banner > span:nth-child(4){
+		margin-left: 0rem;
+		rotate: 349deg;
+	}
+	
+	.banner > span{
+		letter-spacing: 0.2rem;
+	}
+	
+	.baby-pola {
+		margin-bottom: 25rem;
+	}
+	
+	footer{
+		padding-bottom: 1rem;
+	}
+}
+
+
+

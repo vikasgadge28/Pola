@@ -1,0 +1,550 @@
+.pola-bear-1{
+	background-image: url(../images/pola-1.webp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 25rem;
+    margin-bottom: 6rem;
+    width: 22rem;
+    height: 16rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pola-meme{
+	background-image: url(../images/pola-2.webp);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 4rem;
+    margin-bottom: 9rem;
+    width: 21rem;
+    height: 19rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.pepe-meme{
+	background-image: url(../images/pepe-halp.webp);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 45rem;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 17rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+   .hero-meme{
+	height: 30em;
+}
+
+
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+/* Positioning banner in the background */
+.banner-meme {
+    position: absolute; 
+    transform: translate(7%, 20%); /* Centers the element */
+    font-size: 6rem; 
+    letter-spacing: 0.4rem;
+}
+
+
+.banner-meme> span{
+	text-shadow: -1px 0 white, 0 15px white, 1px 0 white, 0 -1px white;
+}
+
+.banner-meme span {
+  display: inline-block;
+  animation: hoverEffect 2s ease-in-out infinite;
+}
+
+
+.banner-meme span:nth-child(1) { animation-delay: 0.5s; }
+.banner-meme span:nth-child(2) { animation-delay: 0.4s; }
+.banner-meme span:nth-child(3) { animation-delay: 0.6s; }
+.banner-meme span:nth-child(4) { animation-delay: 0.8s; }
+.banner-meme span:nth-child(6) { animation-delay: 0.5s; }
+.banner-meme span:nth-child(7) { animation-delay: 0.4s; }
+.banner-meme span:nth-child(8) { animation-delay: 0.8s; }
+.banner-meme span:nth-child(9) { animation-delay: 0.5s; }
+.banner-meme span:nth-child(10) { animation-delay: 0.5s; }
+.banner-meme span:nth-child(11) { animation-delay: 0.4s; }
+.banner-meme span:nth-child(12) { animation-delay: 0.6s; }
+.banner-meme span:nth-child(13) { animation-delay: 0.8s; }
+.banner-meme span:nth-child(14) { animation-delay: 0.5s; }
+.banner-meme span:nth-child(15) { animation-delay: 0.4s; }
+.banner-meme span:nth-child(16) { animation-delay: 0.6s; }
+
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+.img{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.glacier-meme-1{
+	background-image: url("../images/glacier-1.svg");
+	width: 55rem;
+	height: 35rem;
+	margin-left: -5rem;
+	margin-bottom: -1.95rem;
+}
+
+.glacier-meme-2{
+	background-image: url("../images/glacier-2.svg");
+	width: 50rem;
+	height: 10rem;
+	margin-right: -5rem;
+	margin-bottom: 5rem;
+}
+
+
+/* ==========================================================================
+   memes
+   ========================================================================== */
+   	.memes img ,.memes video {
+		width: 22rem;
+		height: 22rem;
+	}
+	.memes span{
+		font-size: 1.2rem;
+	}
+   .memes > div > div,
+   .memes > div > div > div:nth-child(1){
+	   border-width: 0.4rem;
+	   border-style: solid;
+   }
+   
+   
+   .memes > div > div{
+		animation: hoverEffect 2s ease-in-out infinite;
+	   display: inline-block;
+   }
+   
+   .memes > div > div:nth-child(1) { animation-delay: 0.5s; }
+   .memes > div > div:nth-child(2) { animation-delay: 0.4s; }
+   .memes > div > div:nth-child(3) { animation-delay: 0.6s; }
+   .memes > div > div:nth-child(4) { animation-delay: 0.8s; }
+   
+   
+   .memes > div > div{
+	   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, var(--bs-blue-3) 0px -6px 0px inset;
+	   transition: 0.3s all;
+   }
+   
+/* Scale and increase z-index on hover for all */
+.memes > div:hover > div {
+    transform: scale(1.1); /* Scales the div up */
+    position: relative;
+    z-index: 1; /* Ensures the hovered div overlaps others */
+}
+
+/* Apply specific rotations for each child */
+.memes > div:nth-child(3n+1) > div {
+    rotate: 8deg;
+}
+.memes > div:nth-child(3n+1):hover > div {
+    rotate: -2deg;
+	animation: none;
+}
+
+.memes > div:nth-child(3n+2) > div {
+    rotate: -8deg;
+}
+.memes > div:nth-child(3n+2):hover > div {
+    rotate: -4deg;
+	animation: none;
+}
+
+.memes > div:nth-child(3n+3) > div {
+    rotate: 10deg;
+}
+.memes > div:nth-child(3n+3):hover > div {
+    rotate: 3deg;
+	animation: none;
+}
+
+/* If you have more items and the pattern continues... */
+.memes > div:nth-child(3n+4) > div {
+    rotate: -3deg;
+}
+.memes > div:nth-child(3n+4):hover > div {
+    rotate: 6deg;
+}
+
+   .memes > div > div,
+   .memes > div > div > div{
+	   border-color: var(--bs-blue-1);
+   }
+   
+   .memes > div > div::after{
+	   content: "";
+	   position: absolute;
+	   bottom: 0;
+	   right: 0;
+	   z-index: 1;
+	   width: 100%;
+	   height: 5rem;
+	   background: url("../images/snow-cap-4.svg");
+	   background-size: contain;
+	   background-repeat: no-repeat;
+	   margin-bottom: -2rem;
+	   margin-right: -7.6rem;
+   }
+   
+   .meme-description{
+	display: flex;
+	flex-direction: row;
+   }
+   .meme-description button {
+	width: 40px;
+   }
+   .meme-description button :hover {
+	opacity: 60%;
+   }
+   .arrow-container{
+	display: flex;
+	justify-content: space-between;  /* Centers horizontally */
+	align-items: center;
+	
+   }
+   
+
+.arrow-container button {
+	border: none;
+	width: 60px; 
+	height: 60px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: #e2eff7;
+	transition: transform 0.3s all; 
+  }
+  
+
+  .arrow-left svg {
+	transform: rotate(-90deg); 
+  }
+  
+
+  .arrow-right svg {
+	transform: rotate(90deg); 
+  }
+
+  .arrow-container button:hover {
+	transform: scale(1.1);
+	color: #c9e1ef; 
+  }
+  
+
+@media screen and (max-width: 1440px){
+	.hero-meme{
+		height: 28em;
+	}
+    .banner-meme> span{
+        text-shadow: -1px 0 white, 0 11px white, 1px 0 white, 0 -1px white;
+    }
+    
+   	.glacier-meme-1 {
+		margin-left: -15rem;
+	}
+	.glacier-meme-2{
+		width: 30rem;
+		margin-left: -10rem;
+	}
+	
+	.pola-bear-1 {
+		width: 18rem;
+		height: 14rem;
+		margin-left: 13rem;
+	}
+	
+	.pola-meme{
+		width: 13rem;
+		margin-right: 2rem;
+		margin-bottom: 3rem;	
+	}
+	
+	.pepe-meme{
+
+		margin-left: 37rem;
+		margin-bottom: 4rem;
+		width: 16rem;
+		height: 12rem;
+
+	}
+	
+    .banner-meme { 
+        font-size: 5rem;
+		transform: translate(5%, 25%); /* Centers the element */
+        letter-spacing: 0.3rem;   
+      }
+
+}
+
+
+@media screen and (max-width: 1024px){
+    
+
+    .banner-meme> span{
+        text-shadow: -1px 0 white, 0 9px white, 1px 0 white, 0 -1px white;
+    }
+    
+    .banner-meme {
+        font-size: 3.5rem;
+        transform: translate(5%, 30%); /* Centers the element */
+        letter-spacing: 0.3rem;  
+    }
+    
+   	.glacier-meme-1 {
+		margin-left: -24rem;
+	}
+	
+	.glacier-meme-2 {
+		display: none;
+	}
+	
+	.pola-bear-1 {
+		margin-left: 2rem;
+	}
+    .pola-meme {
+		margin-right: -2rem;
+		display: none;
+	}
+	.pepe-meme{
+
+		margin-left: 30rem;
+		margin-bottom: 4rem;
+		width: 16rem;
+		height: 12rem;
+
+	}
+	
+	.snow-cap-2::before {
+		margin-top: -5.3rem;
+		rotate: 350deg;
+	}
+	
+	.snow-cap-3::after {
+		margin-bottom: -4.3rem;
+		margin-right: -39.8rem;
+	}
+	.memes img ,.memes video{
+		width: 18rem;
+		height: 18rem;
+	}
+	
+	.display-s {
+		font-size: 4.5rem;
+	}
+	
+	footer{
+		padding-bottom: 15rem;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+
+	.hero-meme{
+		height: 20em;
+	}
+	
+	.banner-meme {
+        font-size: 2.5rem;
+        transform: translate(0%, 40%); /* Centers the element */
+        letter-spacing: 0.1rem;  
+    }
+    .banner-meme> span{
+        text-shadow: -1px 0 white, 0 6px white, 1px 0 white, 0 -1px white;
+    }
+    
+	.pepe-meme{
+
+		margin-left: 20rem;
+		margin-bottom: 3rem;
+		width: 14rem;
+		height: 10rem;
+
+	}
+
+	
+	.display-l {
+		font-size: 15rem;
+	}
+	
+	.display-s {
+		font-size: 3rem;
+	}
+	
+	.pola-bear-1 {
+		margin-left: 7rem;
+		margin-bottom: 5rem;
+		width: 13rem;
+		height: 10rem;
+	}
+	.pola-meme {
+		margin-right: -1rem;
+		margin-bottom: 6.5rem;
+		width: 12rem;
+		height: 10rem;
+	}
+	
+	
+	.glacier-meme-1 {
+		width: 38rem;
+		height: 24rem;
+		margin-left: -17rem;
+		margin-bottom: -1.95rem;
+	}
+	
+	.glacier-meme-2 {
+		width: 27rem;
+		height: 6rem;
+		margin-right: -6rem;
+		margin-bottom: 4rem;
+	}
+	
+
+
+	
+	.snow-cap-2::before {
+		margin-top: -4.3rem;
+		rotate:347deg;
+	}
+	
+	.snow-cap-3::after {
+		margin-right: -24.6rem;
+		margin-bottom: -3.8rem;
+	}
+	
+	.memes img ,.memes video{
+		width: 22rem;
+		height: 22rem;
+	}
+	
+	.arrow-container button {
+		width: 50px;
+		height: 50px;
+	
+	}
+		
+	footer{
+		padding-bottom: 7rem;
+	}
+}
+
+@media screen and (max-width: 450px){
+	
+	.hero-meme{
+		height: 10rem;
+	}
+	
+	
+	.hero-meme > .fs-3 {
+    	font-size: calc(0.9rem + .6vw) !important;
+		padding: 1rem 0 0;
+	}
+	
+	
+	.display-l {
+		font-size: 9rem;
+	}
+    
+    .banner-meme> span{
+        text-shadow: -1px 0 white, 0 4px white, 1px 0 white, 0 -1px white;
+    }
+    .banner-meme {
+        font-size: 1.8rem;
+        transform: translate(10%, 50%); /* Centers the element */
+        letter-spacing: 0rem;  
+    }
+
+	.glacier-meme-1 {
+		margin-left: -3rem;
+		width: 16rem;
+		height: 9rem;
+	}
+	
+	.pepe-meme{
+
+		margin-left: 15rem;
+		margin-bottom: 0rem;
+		width: 9rem;
+		height: 7rem;
+
+	}
+
+	
+	.glacier-meme-2 {
+		width: 18rem;
+		height: 5rem;
+		margin-right: -4rem;
+		margin-bottom: 0rem;
+	}
+	
+	.pola-bear-1{
+		margin-left: 3rem;
+		margin-bottom: 0.5rem;
+		width: 9rem;
+		height: 7.5rem;	
+	}
+	
+	.pola-meme {
+		margin-right: -1.5rem;
+		margin-bottom: 2.5rem;
+		width: 8.5rem;
+		height: 6.5rem;
+	}
+		
+	.snow-cap::before {
+		margin-top: -1.4rem;
+	}
+	
+	.memes{
+		margin-left: 1rem;
+	}
+	
+	.memes > div > div::after {
+		margin-right: -13.6rem;
+	}
+	
+	.snow-cap-2::before {
+		margin-top: -2rem;
+	}
+	
+	.snow-cap-3::after {
+		margin-bottom: -2.7rem;
+		margin-right: -7.3rem;
+		rotate: 1deg;
+	}
+	
+	.memes img ,.memes video{
+		width: 15rem;
+		height: 15rem;
+	}
+    
+	
+	footer{
+		padding-bottom: 1rem;
+	}
+}
+
+
+

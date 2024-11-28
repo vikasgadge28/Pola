@@ -1,0 +1,255 @@
+
+body {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+        url(../pfp_generator/images/Full-BG-Image.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.avatar-customizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+}
+
+/* ==========================================================================
+   Banner
+   ========================================================================== */
+
+/* Positioning banner in the background */
+.banner-pfp {
+    position: absolute; 
+    opacity: 0.7; 
+    font-size: 6rem; 
+    top: 3%;
+    letter-spacing: -1rem;
+}
+
+
+.banner-pfp> span{
+	text-shadow: -1px 0 white, 0 15px white, 1px 0 white, 0 -1px white;
+}
+
+.banner-pfp span {
+  display: inline-block;
+  animation: hoverEffect 2s ease-in-out infinite;
+}
+
+/* Example individual delays for each letter */
+.banner-pfp span:nth-child(1) { animation-delay: 0.5s; }
+.banner-pfp span:nth-child(2) { animation-delay: 0.4s; }
+.banner-pfp span:nth-child(3) { animation-delay: 0.6s; }
+.banner-pfp span:nth-child(4) { animation-delay: 0.8s; }
+
+
+
+/* Avatar image container with 500px size */
+.avatar-image {
+    position: relative;
+    width: 25rem; /* 400px */
+    height: 25rem; /* 400px */
+    border-radius: 0.625rem;
+    overflow: hidden;
+    object-fit: contain;
+    margin-top: 8rem;
+}
+
+/* Avatar image style */
+.avatar-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Layering for different parts of the avatar */
+.background-image {
+    z-index: 1; /* Background layer */
+}
+
+.head-image {
+    z-index: 3; /* Default head layer */
+}
+
+.clothes-image {
+    z-index: 2; /* Clothes layer */
+}
+
+.hats-image {
+    z-index: 6; /* Clothes layer */
+}
+
+.eyes-image {
+    z-index: 4; /* Eyes layer */
+}
+
+.glasses-image {
+    z-index: 5; /* Eyes layer */
+}
+
+.mouth-image {
+    z-index: 6; /* Mouth layer */
+}
+
+.pola-army-image {
+    z-index: 7; /* Topmost layer */
+}
+
+/* Control section styling */
+.controls {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.controls-choices{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+/* Individual control for each attribute */
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 14rem;
+    padding: 0.3125rem;
+    border: 0.1rem solid #a3d6d0;
+    border-radius: 0.3125rem;
+    background-color: #fff;
+}
+
+/* Arrow button styling */
+.left-arrow, .right-arrow {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 1.5625rem; /* 25px */
+    height: 1.5625rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Arrow button hover effect */
+.left-arrow:hover, .right-arrow:hover {
+    background-color: #eee;
+}
+
+.left-arrow-img{
+    
+    padding-right: 0.1rem;
+    width: 0.7rem;
+}
+
+ .right-arrow-img{
+    padding-left: 0.1rem;
+    width: 0.7rem;
+}
+
+.action {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+/* Styling for the buttons in the action section */
+.action button {
+    border: 4px solid #a3d6d0;
+    border-radius: 2rem;
+    font-weight: 900;
+    font-size: 1.6rem;
+    width: 12rem;
+    height: 3rem;   
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.random-button{
+    background-color: #a3d6d0;
+    color: #fff ;
+ }
+ .random-button:hover{
+    background-color: #72b1b1;
+    border: 4px solid #72b1b1;
+ }
+.download-button{
+    color: #ddd; 
+    background-color: #305473;   
+}
+.download-button:hover{
+    background-color: #ddd;
+    border: 4px solid #72b1b1;
+    color: #72b1b1;
+ }
+.avatar-canvas{
+    display: none;
+}
+
+@media screen and (max-width: 1440px){
+ 
+    .banner-pfp { 
+        font-size: 5rem;   
+      }
+      .avatar-image {
+        margin-top: 6rem;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .banner-pfp {
+        font-size: 4rem;
+        letter-spacing: -0.7rem;  
+    }
+    .action{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .avatar-image img {
+        object-fit: contain; /* Maintains image proportions */
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 450px){
+  
+    .banner-pfp {
+        font-size: 2.8rem;
+        letter-spacing: -0.5rem;
+        top: 4%;  
+    }
+    .avatar-image{
+        width: 18.75rem; /* 300px */
+        height: 18.75rem; /* 300px */
+        margin-top: 4rem;
+    }
+    
+    .avatar-image img {
+        object-fit: contain; /* Maintains image proportions */
+    }
+    
+    .controls{
+        margin-top: 0.75rem;  
+    }
+    .action{
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+
